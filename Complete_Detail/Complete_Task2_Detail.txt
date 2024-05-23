@@ -1,0 +1,25 @@
+Task 2
+Detect weather they're child or not:
+
+(Dataset is given in an code, Model weights was there as Age_Model.h5,Test images and Result images was also there with Basic Interface and in an Tested Folder tested model with accuracy score 0.825 with Different Interface was given.
+More Training folder = Done more training with respect to an different dataset,the link was given in a code.Here classified it with children and adult and with the classification approach execute it.) 
+
+Child detection is based on age parameter so it's a Regression problem.
+Uploaded a data with a zipped File, unzipped it,then Mounted the drive.
+Import Necessary Libraries.
+Read a data in fldr.
+In images saved an images in a form of array.Then from a data splited the age parameter stored it in ages list.Converting the List into an Array.
+Then implementing Feature Scaling, Normailzation in an image(So the model will predict well and get good accuracy).
+Graph Representation of Distribution of Age.
+Images will be my Independent feature and Ages will be dependent feature.
+Splitting a Independent and Dependent feature for Training and Testing Purpose.
+Implement a CNN(Convolutional Neural Network).
+In the output layer as well as in an hidden layer implemented a 'ReLu' activation function and Loss function/Cost function is my 'MAE'(Mean Absulate Error) with Adam optimizer and accuracy metrics.
+Then Declare a Early Stopping (monitoring=value loss, patience of 25 epochs,total 250 epochs and batch_size is 64).then with a condition that if age is less than 20 then declare it as a child.
+
+While Testing and Hyperparameter Tuning:
+Does the same with the help of multi-classification techniques also by making group of ages but getting certain flaws.
+Model Saved as Age_Model_Acc_0.825.h5.
+And to Test this model Testing_Interface is given.
+
+Having certain problems.The person face need to be visible more than 50% from an image and it need to be straight facing.
